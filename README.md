@@ -1,0 +1,1 @@
+# An-lise-de-Faturamento-e-Telemetria-com-LLM
