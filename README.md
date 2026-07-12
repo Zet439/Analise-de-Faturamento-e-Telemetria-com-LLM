@@ -1,9 +1,16 @@
 # Analise-de-Faturamento-e-Telemetria-com-LLM
 
 ## Sobre o Projeto
-Scripts em python para simular a leitura de uma base de dados de telemetria ou faturamento
+O sistema processa dados para identificação de anomalias, fraudes ou problemas do sistema, utilizando LLMs para a geração de análises e insights sobre o projeto.
 
-## Por que foi feito
-O projeto foi feito para que eu pudesse demonstrar que tenho conhecimentos análise de dados, engenharia de prompt, flexibilidade de modelos para reduzir custos com LLMs.
+# Arquitetura
+Processamento: O pandas realiza o cálculo de estatísticas para detecção das métricas desejadas e outros valores para facilitar a interpretação da LLM
 
-A LLM não recebe diretamente o CSV para que evite alucinações e algumas operações são feitas anteriormente para evitar que ela faça os cálculos, economizando tokens e mantendo uma coerência maior.
+Engenharia de Prompt: O prompt foi feito de maneira que a LLM tenha um custo reduzido de tokens pois ela não realiza cálculos e diminuir alucinações recebendo um resumo detalhado dos dados obtidos.
+
+# Tecnologias utilizadas
+Linguagem: python 3.13
+
+Manipulação de dados: Numpy, Pandas
+
+Integração com IA: OpenAI SDK
